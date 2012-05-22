@@ -113,7 +113,7 @@ public class HttpRelayingHandler extends SimpleChannelUpstreamHandler {
         
         if (!readingChunks) {
             final HttpResponse hr = (HttpResponse) me.getMessage();
-            log.info("Received raw response: {}", hr);
+            log.debug("Received raw response: {}", hr);
             
             // We need to make a copy here because the response will be 
             // modified in various ways before we need to do things like
